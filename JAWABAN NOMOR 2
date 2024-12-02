@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    const int jumlahAngka = 10;
+    int angka[jumlahAngka];
+    int jumlah = 0, jumlahSementara = 0; // Tambahkan variabel jumlahSementara
+
+    // Meminta pengguna memasukkan angka
+    cout << "Masukkan 10 angka integer:\n";
+    for (int i = 0; i < jumlahAngka; ++i) {
+        cout << "Angka ke-" << i+1 << ": ";
+        cin >> angka[i];
+        jumlah += angka[i]; // Menjumlahkan untuk total akhir
+    }
+
+    // Menampilkan hasil dalam bentuk tabel
+    cout << "\nData Angka dan Jumlahnya:\n";
+    cout << "No.\tAngka\tJumlah Kumulatif\n";
+    cout << "----\t-----\t----------------\n";
+    for (int i = 0; i < jumlahAngka; ++i) {
+        jumlahSementara += angka[i]; // Hitung jumlah kumulatif sementara
+        cout << i+1 << "\t" << angka[i] << "\t" << jumlahSementara << endl;
+    }
+
+    cout << "\nJumlah semua angka: " << jumlah << endl;
+
+    return 0;
+}
