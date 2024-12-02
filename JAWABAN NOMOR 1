@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int jumlah_array;
+    int angka[4];
+    
+    cout << "Masukkan Nilai 1 : ";
+    cin >> angka[0];
+    cout << "Masukkan Nilai 2 : ";
+    cin >> angka[1];    
+    cout << "Masukkan Nilai 3 : ";
+    cin >> angka[2];    
+    cout << "Masukkan Nilai 4 : ";
+    cin >> angka[3];
+    cout << "Masukkan Nilai 5 : ";
+    cin >> angka[4];    
+    
+    cout<< "Nilai Yang anda input: "<<angka[0]<< " "<<angka[1]<< " "<<angka[2]<< " "<< angka[3]<< " "<< angka[4];
+    
+    return 0;
+}
